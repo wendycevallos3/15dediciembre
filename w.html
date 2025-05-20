@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área Técnica Informática - U.E. 15 de Diciembre</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBIqqU6qq1sL3GYTDUqRXywJ5YBakxr8YMPA&s') no-repeat center center fixed;
+      background-size: cover;
+      color: #0b1e40;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(255, 255, 255, 0.75);
+      z-index: -1;
+    }
+    header {
+      width: 100%;
+      max-width: 900px;
+      background-color: #0b1e40;
+      color: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      text-align: center;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    header img.logo {
+      height: 60px;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(255,255,255,0.7);
+    }
+    header .titles {
+      flex-grow: 1;
+      text-align: left;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    main {
+      width: 100%;
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(11,30,64,0.15);
+      padding: 30px 40px;
+    }
+
+    nav {
+      background-color: #c62828;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+    nav h2 {
+      color: white;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    nav li {
+      margin: 8px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      color: #c62828;
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+      border-bottom: 3px solid #c62828;
+      padding-bottom: 6px;
+    }
+
+    .bienvenida p {
+      font-size: 1.1rem;
+      color: #0b1e40;
+      margin-top: 10px;
+    }
+
+    .especialidad {
+      margin-bottom: 25px;
+    }
+
+    .especialidad img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .especialidad strong {
+      color: #c62828;
+      display: block;
+      margin-bottom: 5px;
+      font-size: 1.1rem;
+    }
+
+    section p, .especialidad {
+      font-size: 1.05rem;
+      color: #0b1e40;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #0b1e40;
+      font-size: 0.9rem;
+      font-style: italic;
+      text-align: center;
+      width: 100%;
+      max-width: 900px;
+      padding: 15px 0;
+      border-top: 1px solid #c62828;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header .titles {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeaNaj2SMnNrVp1eQWTa32CvRQcJscN7PFxVM2yBxqGNf0OBdD6YAYGYYXmSLfmrQ7grgN4GFiSzQm1ZaZX1DqWYuRgOoNgDoRJg69s45Pz8sQl0Bbe-1yfLLKFHgkHQ40jjzoTyGtb8tc/s1600/cole.jpg" alt="Logo" />
+    <div class="titles">
+      <h1>Área Técnica de Informática</h1>
+      <p>Unidad Educativa "15 de Diciembre" - Quito, Ecuador</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Índice / Menú -->
+    <nav>
+      <h2>Índice</h2>
+      <ul>
+        <li><a href="#bienvenida">Bienvenida</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#proyectos">Proyectos destacados</a></li>
+        <li><a href="#contacto">Información de contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Bienvenida -->
+    <section id="bienvenida">
+      <h2>Bienvenidos</h2>
+      <p>
+        ¡Te damos la más cordial bienvenida a la página del Área Técnica de Informática de la Unidad Educativa "15 de Diciembre"!  
+        Aquí encontrarás información sobre nuestras especialidades, proyectos y formas de contacto. Nos enorgullece formar técnicos con valores, conocimientos actualizados y pasión por la tecnología.
+      </p>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades">
+      <h2>Especialidades ofrecidas</h2>
+
+      <div class="especialidad">
+        <img src="https://static.vecteezy.com/system/resources/previews/010/376/655/non_2x/technical-support-customer-help-global-international-tech-support-customer-service-business-and-technology-concept-earth-globe-in-wireframe-hands-illustration-vector.jpg" alt="Soporte Técnico" />
+        <strong>Soporte Técnico</strong>
+        Instalación, diagnóstico y reparación de equipos.
+      </div>
+
+      <div class="especialidad">
+        <img src="https://www.aipbarcelona.com/wp-content/uploads/2018/07/ofimatica-e1531312133693.jpg" alt="Aplicaciones Ofimáticas" />
+        <strong>Aplicaciones Ofimáticas</strong>
+        Dominio de herramientas como Word, Excel y PowerPoint.
+      </div>
+
+      <div class="especialidad">
+        <img src="https://www.quois.com/wp-content/uploads/2021/07/Las-fases-del-desarrollo-de-una-web.jpg" alt="Diseño y Desarrollo Web" />
+        <strong>Diseño y Desarrollo Web</strong>
+        Creación de páginas interactivas con HTML, CSS y JavaScript.
+      </div>
+
+      <div class="especialidad">
+        <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg" alt="Programación" />
+        <strong>Programación</strong>
+        Aprendizaje de lenguajes como Python y JavaScript.
+      </div>
+
+      <div class="especialidad">
+        <img src="https://imecaf.com/blog/wp-content/uploads/Sistemas-Operativos-1.jpg" alt="Sistemas Operativos" />
+        <strong>Sistemas Operativos</strong>
+        Instalación y configuración de sistemas como Windows y Linux.
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+      <h2>Proyectos destacados</h2>
+      <ul>
+        <li><strong>Mi primer sitio web:</strong> Creación de una página personal desde cero.</li>
+        <li><strong>Simulación de red local:</strong> Montaje de una red LAN utilizando simuladores como Cisco Packet Tracer.</li>
+      </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Información de contacto</h2>
+      <p><strong>Dirección:</strong> Calle Oswaldo Guayasamín y la Unión y Progreso, Quito 170126.</p>
+      <p><strong>Correo electrónico:</strong> <a href="mailto:wendycevallos898@gmail.com">wendycevallos898@gmail.com</a></p>
+      <p><strong>Teléfono:</strong> 0994012475</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Unidad Educativa "15 de Diciembre"
+  </footer>
+</body>
+</html>
